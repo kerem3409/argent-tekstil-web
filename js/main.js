@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const body = document.body;
+  const root = document.documentElement;
   const header = document.querySelector('.site-header');
   const menuButton = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.main-nav');
@@ -14,14 +15,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const closeMenu = () => {
     body.classList.remove('menu-open');
+    root.classList.remove('menu-open');
     menuButton?.setAttribute('aria-expanded', 'false');
+    menuButton?.setAttribute('aria-label', 'Menüyü aç');
   };
 
   menuButton?.addEventListener('click', () => {
     const isOpen = body.classList.toggle('menu-open');
+    root.classList.toggle('menu-open', isOpen);
     menuButton.setAttribute('aria-expanded', String(isOpen));
+    menuButton.setAttribute('aria-label', isOpen ? 'Menüyü kapat' : 'Menüyü aç');
   });
   nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && body.classList.contains('menu-open')) closeMenu();
+  });
   window.addEventListener('resize', () => { if (window.innerWidth > 1024) closeMenu(); });
 
   const updateHeader = () => header?.classList.toggle('scrolled', window.scrollY > 20);
