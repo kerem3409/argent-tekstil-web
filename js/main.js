@@ -4,6 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuButton = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.main-nav');
 
+  if (nav && !nav.querySelector('.mobile-nav-cta')) {
+    const mobileCta = document.createElement('a');
+    mobileCta.className = 'mobile-nav-cta';
+    mobileCta.href = 'iletisim.html#teklif';
+    mobileCta.textContent = 'TEKLİF AL';
+    nav.appendChild(mobileCta);
+  }
+
   const closeMenu = () => {
     body.classList.remove('menu-open');
     menuButton?.setAttribute('aria-expanded', 'false');
@@ -14,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     menuButton.setAttribute('aria-expanded', String(isOpen));
   });
   nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-  window.addEventListener('resize', () => { if (window.innerWidth > 980) closeMenu(); });
+  window.addEventListener('resize', () => { if (window.innerWidth > 1024) closeMenu(); });
 
   const updateHeader = () => header?.classList.toggle('scrolled', window.scrollY > 20);
   updateHeader();
