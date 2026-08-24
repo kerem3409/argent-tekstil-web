@@ -56,11 +56,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('#contact-form');
   form?.addEventListener('submit', event => {
     event.preventDefault();
-    const message = document.querySelector('#form-message');
-    message?.classList.add('show');
-    message?.setAttribute('role', 'status');
-    form.reset();
-    message?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    const formData = new FormData(form);
+    const value = field => String(formData.get(field) || '').trim();
+    const lines = [
+      '*ARGENT TEKSTİL - YENİ ÜRETİM TALEBİ*',
+      '',
+      `Ad Soyad: ${value('name')}`
+    ];
+
+    if (value('company')) lines.push(`Firma / Marka: ${value('company')}`);
+    lines.push(`Telefon: ${value('phone')}`);
+    if (value('email')) lines.push(`E-posta: ${value('email')}`);
+    lines.push(`Ürün Grubu: ${value('product')}`);
+    if (value('quantity')) lines.push(`Tahmini Adet: ${value('quantity')}`);
+    lines.push('', 'Mesaj:', value('message'));
+
+    const whatsappUrl = `https://wa.me/905425135777?text=${encodeURIComponent(lines.join('\n'))}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   });
 
   document.querySelectorAll('[data-product-gallery]').forEach(gallery => {
