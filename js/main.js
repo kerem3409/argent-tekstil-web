@@ -62,4 +62,28 @@ document.addEventListener('DOMContentLoaded', () => {
     form.reset();
     message?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   });
+
+  document.querySelectorAll('[data-product-gallery]').forEach(gallery => {
+    const mainImage = gallery.querySelector('[data-main-image]');
+    const thumbnails = gallery.querySelectorAll('[data-thumbnail]');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', () => {
+        if (!mainImage || thumbnail.classList.contains('is-active')) return;
+
+        mainImage.classList.add('is-changing');
+        window.setTimeout(() => {
+          mainImage.src = thumbnail.dataset.imageSrc;
+          mainImage.alt = thumbnail.dataset.imageAlt || '';
+          thumbnails.forEach(item => {
+            item.classList.remove('is-active');
+            item.setAttribute('aria-pressed', 'false');
+          });
+          thumbnail.classList.add('is-active');
+          thumbnail.setAttribute('aria-pressed', 'true');
+          mainImage.classList.remove('is-changing');
+        }, 100);
+      });
+    });
+  });
 });
