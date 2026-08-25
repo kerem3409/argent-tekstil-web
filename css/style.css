@@ -53,9 +53,9 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
 /* Header */
 .site-header { position: fixed; z-index: 100; top: 0; left: 0; width: 100%; border-bottom: 1px solid transparent; transition: background .25s, border-color .25s, transform .25s; }
 .site-header.scrolled, .site-header.inner-header { border-color: rgba(20,20,16,.09); background: rgba(247,246,241,.94); backdrop-filter: blur(16px); }
-.nav-wrap { display: flex; height: 84px; align-items: center; justify-content: space-between; gap: 28px; }
-.header-brand { position: relative; z-index: 102; display: block; width: clamp(170px, 14.5vw, 190px); flex: 0 0 auto; }
-.header-brand img { width: 100%; height: auto; }
+.nav-wrap { display: flex; height: 80px; align-items: center; justify-content: space-between; gap: 28px; }
+.header-brand { position: relative; z-index: 102; display: flex; width: 200px; max-height: 52px; align-items: center; flex: 0 0 auto; overflow: hidden; }
+.header-brand img { width: 100%; max-height: 52px; height: auto; object-fit: contain; }
 .brand { position: relative; z-index: 102; font-family: "Manrope", sans-serif; font-size: 1.05rem; font-weight: 700; letter-spacing: .13em; white-space: nowrap; }
 .main-nav { display: flex; align-items: center; gap: clamp(18px, 2.3vw, 34px); margin-left: auto; }
 .main-nav a { position: relative; font-size: .84rem; color: #383934; }
@@ -227,8 +227,9 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
 
 @media (max-width: 768px) {
   .container { width: min(calc(100% - 40px), var(--container)); }
-  .nav-wrap { height: 68px; }
-  .header-brand { width: clamp(130px, 36vw, 150px); }
+  .nav-wrap { height: 76px; }
+  .header-brand { width: 150px; max-height: 42px; }
+  .header-brand img { max-height: 42px; }
   .brand { font-size: .96rem; letter-spacing: .105em; }
   .section { padding: 62px 0; }
   .section--tight { padding: 46px 0; }
@@ -306,7 +307,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
 
 @media (max-width: 480px) {
   .container { width: calc(100% - 32px); }
-  .nav-wrap { height: 64px; }
+  .nav-wrap { height: 76px; }
   .brand { font-size: .86rem; letter-spacing: .085em; }
   .menu-toggle { width: 46px; height: 46px; margin-right: -8px; }
   .main-nav { justify-content: flex-start; gap: 0; padding: calc(82px + env(safe-area-inset-top)) 20px calc(24px + env(safe-area-inset-bottom)); }
