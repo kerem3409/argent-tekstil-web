@@ -65,13 +65,14 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
 .menu-toggle span { display: block; width: 100%; height: 1.5px; margin: 6px 0; background: var(--ink); transition: transform .25s, opacity .25s; }
 
 /* Hero and image placeholders */
-.hero { min-height: 100svh; padding: 132px 0 36px; }
-.hero__media { position: relative; display: flex; min-height: calc(100svh - 168px); align-items: end; overflow: hidden; border-radius: 22px; background: linear-gradient(120deg, rgba(8,9,7,.7), rgba(8,9,7,.14)), radial-gradient(circle at 77% 28%, #9d9b8f 0, #66685e 27%, #2c2e29 70%); color: var(--white); }
-.hero__media::before { position: absolute; inset: 0; background: repeating-linear-gradient(105deg, transparent 0 58px, rgba(255,255,255,.035) 59px 60px); content: ""; }
-.hero__content { position: relative; z-index: 1; width: min(870px, 88%); padding: clamp(32px, 6vw, 78px); }
-.hero h1 { margin-bottom: 24px; }
-.hero .lead { max-width: 650px; color: #e4e4dd; }
-.hero .button-row { margin-top: 36px; }
+.hero { padding: 132px 0 52px; }
+.hero__grid { display: grid; grid-template-columns: minmax(0, .78fr) minmax(0, 1.08fr); align-items: center; gap: clamp(38px, 5vw, 74px); }
+.hero__content { max-width: 520px; padding-block: 28px; }
+.hero h1 { margin-bottom: 24px; font-size: clamp(4rem, 5.2vw, 4.75rem); line-height: 1.02; }
+.hero .lead { max-width: 500px; color: var(--muted); font-size: clamp(1.05rem, 1.35vw, 1.22rem); line-height: 1.65; }
+.hero .button-row { margin-top: 34px; }
+.hero__media { overflow: hidden; border-radius: 20px; box-shadow: var(--shadow); }
+.hero__media img { width: 100%; height: auto; aspect-ratio: 1672 / 941; object-fit: cover; object-position: center; }
 .media-placeholder { position: relative; min-height: 430px; overflow: hidden; border-radius: var(--radius); background: radial-gradient(circle at 70% 28%, #d3d0c3, #aaa99e 40%, #77796f 100%); }
 .media-placeholder::before { position: absolute; inset: 0; background: repeating-linear-gradient(112deg, transparent 0 42px, rgba(255,255,255,.09) 43px 44px); content: ""; }
 .media-placeholder--dark { background: radial-gradient(circle at 65% 30%, #88897f, #4d5049 45%, #282a27 100%); }
@@ -238,12 +239,13 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
   .split, .story-row, .contact-grid { grid-template-columns: 1fr; gap: 32px; }
   .split--reverse .split__media, .story-row:nth-child(even) .story-row__media { order: initial; }
   .media-placeholder, .story-row .media-placeholder, .production-hero-media { min-height: 0; aspect-ratio: 4 / 3; }
-  .hero { min-height: auto; padding: 88px 0 20px; }
-  .hero__media { min-height: clamp(520px, 72svh, 620px); border-radius: 14px; }
-  .hero__content { width: 100%; padding: 28px 24px 34px; }
-  .hero h1 { max-width: 540px; margin-bottom: 18px; font-size: clamp(2.85rem, 11.5vw, 4.6rem); line-height: .98; }
+  .hero { padding: 104px 0 28px; }
+  .hero__grid { grid-template-columns: 1fr; gap: 30px; }
+  .hero__content { max-width: 620px; padding: 0; }
+  .hero h1 { max-width: 580px; margin-bottom: 18px; font-size: clamp(3rem, 7vw, 3.625rem); line-height: 1.02; }
   .hero .lead { font-size: clamp(1rem, 3.8vw, 1.15rem); line-height: 1.55; }
   .hero .button-row { margin-top: 26px; }
+  .hero__media { border-radius: 14px; }
   .grid-3, .steps { grid-template-columns: 1fr; }
   .grid-3 { gap: 0; }
   .capability { min-height: auto; padding: 24px 16px; }
@@ -310,10 +312,8 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
   .section--tight { padding: 38px 0; }
   .section-head { margin-bottom: 32px; }
   h2 { font-size: clamp(1.9rem, 9.2vw, 2.6rem); }
-  .hero { padding-top: 80px; }
-  .hero__media { min-height: clamp(500px, 70svh, 570px); }
-  .hero__content { padding: 24px 20px 28px; }
-  .hero h1 { font-size: clamp(2.7rem, 13vw, 3.55rem); }
+  .hero { padding-top: 88px; }
+  .hero h1 { font-size: clamp(2.375rem, 10.5vw, 2.875rem); }
   .hero .button-row, .main-cta .button-row { display: grid; grid-template-columns: 1fr; width: 100%; }
   .hero .btn, .main-cta .btn { width: 100%; min-height: 52px; }
   .media-placeholder, .story-row .media-placeholder, .process-row .media-placeholder { aspect-ratio: 1 / .82; }
@@ -354,8 +354,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
 @media (max-width: 350px) {
   .container { width: calc(100% - 28px); }
   .brand { font-size: .78rem; }
-  .hero__content { padding-inline: 17px; }
-  .hero h1 { font-size: 2.55rem; }
+  .hero h1 { font-size: 2.375rem; }
   .product-card__content h3 { font-size: 1.3rem; }
   .quote-panel blockquote { font-size: 1.5rem; }
   .product-thumbnails { gap: 5px; }
