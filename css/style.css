@@ -175,6 +175,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
 .story-row p { color: var(--muted); font-size: 1.05rem; }
 .story-row .media-placeholder { min-height: 490px; }
 .process-row { display: grid; grid-template-columns: .8fr 1fr 1fr; gap: 38px; padding: 65px 0; border-top: 1px solid var(--line); }
+.process-row.reveal { transition-duration: .65s; }
 .process-row__num { color: #9a9b92; font-size: .78rem; }
 .process-row p { color: var(--muted); }
 .process-row .media-placeholder { min-height: 270px; }
@@ -183,6 +184,19 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
 .process-row .media-placeholder img { height: 270px; }
 .production-hero-media img { height: 560px; }
 .production-hero-media { min-height: 560px; }
+
+@media (hover: hover) and (pointer: fine) {
+  .process-row { position: relative; }
+  .process-row::before { position: absolute; top: -1px; right: 0; left: 0; height: 1px; background: #b5a27c; content: ""; transform: scaleX(0); transform-origin: left center; transition: transform .6s cubic-bezier(.22, 1, .36, 1); }
+  .process-row h2 { transition: transform .4s cubic-bezier(.22, 1, .36, 1); }
+  .process-row__num { transition: color .4s ease, opacity .4s ease; }
+  .process-row .media-placeholder img { transition: transform .65s cubic-bezier(.22, 1, .36, 1), filter .65s ease; will-change: transform; }
+  .process-row:hover::before { transform: scaleX(1); }
+  .process-row:hover h2 { transform: translateX(5px); }
+  .process-row:hover .process-row__num { color: #8d7954; opacity: 1; }
+  .process-row:hover .media-placeholder img { filter: brightness(1.03) contrast(1.03); transform: translateY(-4px) scale(1.05); }
+}
+
 .pill-list { display: flex; flex-wrap: wrap; gap: 10px; }
 .pill { padding: 11px 16px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.45); font-size: .84rem; }
 
@@ -531,4 +545,6 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
+  .process-row::before { display: none; }
+  .process-row:hover h2, .process-row:hover .media-placeholder img { filter: none; transform: none; }
 }
