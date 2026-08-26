@@ -97,18 +97,19 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
 .capability p { max-width: 360px; margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.65; }
 .capabilities-footer { display: flex; justify-content: flex-end; margin-top: 32px; }
 .capabilities-footer .text-link::after { content: "→"; }
-.product-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
-.product-card { position: relative; grid-column: span 4; min-height: 520px; overflow: hidden; border-radius: var(--radius); background: #77796f; color: var(--white); }
-.product-card:nth-child(2), .product-card:nth-child(5) { background: #aaa495; }
-.product-card:nth-child(3) { background: #4a4c47; }
-.product-card:nth-child(4) { grid-column: span 7; }
-.product-card:nth-child(5) { grid-column: span 5; }
-.product-card::before { position: absolute; inset: 0; background: radial-gradient(circle at 60% 30%, rgba(255,255,255,.2), transparent 45%), linear-gradient(0deg, rgba(10,10,8,.7), transparent 60%), repeating-linear-gradient(110deg, transparent 0 50px, rgba(255,255,255,.045) 51px 52px); content: ""; transition: transform .6s; }
-.product-card:hover::before { transform: scale(1.04); }
-.product-card__content { position: absolute; right: 0; bottom: 0; left: 0; padding: 30px; }
-.product-card__content h3 { margin: 0; font-size: 1.65rem; }
-.product-card__content p { max-width: 350px; margin: 12px 0 0; color: #dadad4; font-size: .9rem; }
-.product-card__arrow { position: absolute; top: 24px; right: 24px; display: grid; width: 44px; height: 44px; place-items: center; border: 1px solid rgba(255,255,255,.5); border-radius: 50%; }
+.product-showcase-link::after { content: "→"; }
+.product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px 20px; }
+.product-card { position: relative; min-width: 0; color: var(--ink); }
+.product-card__media { aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius); background: #eeece6; }
+.product-card__media img { width: 100%; height: 100%; object-fit: contain; transition: transform .58s cubic-bezier(.22, 1, .36, 1); }
+.product-card--workwear .product-card__media img { object-fit: cover; object-position: center; }
+.product-card__content { padding: 18px 2px 0; }
+.product-card__content h3 { margin: 0; font-size: 1.35rem; }
+.product-card__arrow { position: absolute; z-index: 1; top: 18px; right: 18px; display: grid; width: 38px; height: 38px; place-items: center; border: 1px solid rgba(29,30,27,.28); border-radius: 50%; background: rgba(247,245,239,.82); color: var(--ink); opacity: .68; transition: opacity .3s, border-color .3s; backdrop-filter: blur(6px); }
+@media (hover: hover) and (pointer: fine) {
+  .product-card:hover .product-card__media img { transform: scale(1.04); }
+  .product-card:hover .product-card__arrow { border-color: rgba(29,30,27,.5); opacity: 1; }
+}
 .products-gallery-intro { padding: 132px 0 44px; }
 .products-gallery-intro h1 { max-width: 980px; margin: 0 0 18px; font-size: clamp(3.75rem, 4.8vw, 4.375rem); line-height: .98; }
 .products-gallery-intro p { max-width: 900px; margin: 0; color: var(--muted); font-size: clamp(1rem, 1.5vw, 1.18rem); }
@@ -248,7 +249,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
   .menu-open .menu-toggle span:nth-child(2) { opacity: 0; }
   .menu-open .menu-toggle span:last-child { transform: translateY(-7.5px) rotate(-45deg); }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
-  .product-card, .product-card:nth-child(4), .product-card:nth-child(5) { grid-column: span 6; }
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .timeline { grid-template-columns: repeat(3, 1fr); gap: 38px 0; }
   .steps { grid-template-columns: repeat(2, 1fr); }
   .process-row { grid-template-columns: .2fr 1fr; }
@@ -294,11 +295,9 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
   .grid-3 { gap: 0; }
   .capability { min-height: auto; padding: 24px 16px; }
   .capability__num { margin-bottom: 24px; }
-  .product-grid { gap: 16px; }
-  .product-card, .product-card:nth-child(4), .product-card:nth-child(5) { grid-column: span 12; min-height: 0; aspect-ratio: 4 / 3; }
-  .product-card__content { padding: 24px; }
-  .product-card__content h3 { font-size: 1.42rem; }
-  .product-card__content p { line-height: 1.5; }
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 14px; }
+  .product-card__content { padding-top: 14px; }
+  .product-card__content h3 { font-size: clamp(1rem, 3.4vw, 1.3rem); }
   .timeline { grid-template-columns: 1fr; gap: 0; }
   .timeline { margin-top: 40px; }
   .timeline__item { min-height: 74px; padding: 0 0 28px 30px; border-top: 0; border-left: 1px solid #5e5f58; }
@@ -370,11 +369,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
   .hero .btn, .main-cta .btn { width: 100%; min-height: 52px; }
   .media-placeholder, .story-row .media-placeholder, .process-row .media-placeholder { aspect-ratio: 1 / .82; }
   .media-label { right: 14px; bottom: 14px; max-width: calc(100% - 28px); padding: 7px 10px; white-space: normal; }
-  .product-card, .product-card:nth-child(4), .product-card:nth-child(5) { aspect-ratio: 1 / 1.08; }
-  .product-card__content { padding: 20px; }
-  .product-card__content .text-link { min-height: 44px; align-items: center; font-size: .84rem; }
-  .product-card .media-label[style] { top: 14px !important; right: auto; bottom: auto; left: 14px !important; max-width: calc(100% - 28px); }
-  .product-card__arrow { top: 16px; right: 16px; }
+  .product-card__arrow { top: 10px; right: 10px; width: 34px; height: 34px; }
   .capability { padding-inline: 4px; }
   .quote-panel { padding: 28px 20px; }
   .page-hero { padding: 108px 0 46px; }
@@ -539,6 +534,11 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
   .workwear-sector-card svg { margin-bottom: 22px; }
   .workwear-footer__grid { grid-template-columns: 1fr; }
   .workwear-footer .footer-brand { grid-column: auto; }
+}
+
+@media (max-width: 340px) {
+  .product-grid { grid-template-columns: 1fr; }
+  .product-card__content h3 { font-size: 1.15rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
