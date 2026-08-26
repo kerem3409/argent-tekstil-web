@@ -374,6 +374,131 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
   .product-thumbnails { gap: 5px; }
 }
 
+/* İş elbiseleri landing page */
+.workwear-page { background: #f4f1e9; }
+.workwear-page h2 { font-size: clamp(2.35rem, 4.4vw, 4rem); }
+.workwear-hero { padding: 132px 0 64px; }
+.workwear-hero__grid { display: grid; grid-template-columns: minmax(0, .84fr) minmax(0, 1.16fr); align-items: center; gap: clamp(42px, 5vw, 76px); }
+.workwear-hero__copy { max-width: 545px; }
+.workwear-hero h1 { margin-bottom: 24px; font-size: clamp(3.5rem, 4.5vw, 4.45rem); line-height: 1.02; }
+.workwear-hero .lead { max-width: 520px; line-height: 1.65; }
+.workwear-hero .button-row { margin-top: 34px; }
+.workwear-hero__media { overflow: hidden; border-radius: 20px; background: #ded4c3; box-shadow: var(--shadow); }
+.workwear-hero__media img { aspect-ratio: 16 / 9; height: auto; object-fit: cover; object-position: center; }
+.workwear-statement { padding: 100px 0; background: var(--white); }
+.workwear-statement__grid { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: clamp(50px, 9vw, 130px); }
+.workwear-statement h2 { max-width: 650px; margin-bottom: 28px; }
+.workwear-statement p { max-width: 510px; margin: 0; color: var(--muted); font-size: clamp(1.12rem, 1.8vw, 1.4rem); line-height: 1.75; }
+.workwear-accent-line { display: block; width: 78px; height: 3px; background: var(--accent); }
+.workwear-heading { margin-bottom: 52px; }
+.workwear-heading h2 { max-width: 820px; margin: 0; }
+.workwear-products { background: #f4f1e9; }
+.workwear-product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.workwear-product-card { overflow: hidden; border: 1px solid #d9d5c9; border-radius: 14px; background: #faf8f2; transition: transform .3s, box-shadow .3s; }
+.workwear-product-card:hover { transform: translateY(-6px); box-shadow: 0 18px 45px rgba(25,24,19,.1); }
+.workwear-product-card__media { overflow: hidden; aspect-ratio: 1 / 1; background: #e9e0d1; }
+.workwear-product-card img { height: 100%; object-fit: cover; transition: transform .55s; }
+.workwear-product-card:hover img { transform: scale(1.035); }
+.workwear-product-card h3 { margin: 0; padding: 22px 24px 24px; font-size: 1.35rem; }
+.workwear-branding { background: #1b1c19; color: var(--white); }
+.workwear-heading--light .eyebrow { color: #b9baaf; }
+.workwear-detail-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.workwear-detail-card { overflow: hidden; border: 1px solid #3c3d38; border-radius: 14px; background: #232420; }
+.workwear-detail-card img { aspect-ratio: 4 / 3; height: auto; object-fit: cover; }
+.workwear-detail-card div { display: flex; align-items: center; gap: 16px; padding: 22px 24px 24px; }
+.workwear-detail-card span { color: #898a82; font-size: .72rem; }
+.workwear-detail-card h3 { margin: 0; font-size: 1.35rem; }
+.workwear-sector-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.workwear-sector-card { min-height: 205px; padding: 30px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.workwear-sector-card svg { width: 44px; height: 44px; margin-bottom: 46px; fill: none; stroke: #8d7954; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.workwear-sector-card h3 { max-width: 230px; margin: 0; font-size: 1.22rem; letter-spacing: -.025em; }
+.workwear-direct { background: #ede7da; }
+.workwear-direct__grid { display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: clamp(48px, 8vw, 110px); }
+.workwear-direct__media { overflow: hidden; border-radius: 16px; }
+.workwear-direct__media img { aspect-ratio: 4 / 3; height: auto; object-fit: cover; }
+.workwear-direct__copy { max-width: 520px; }
+.workwear-direct__copy > p { color: var(--muted); font-size: 1.08rem; }
+.workwear-benefits { display: grid; gap: 0; margin: 34px 0 0; padding: 0; list-style: none; }
+.workwear-benefits li { display: flex; min-height: 58px; align-items: center; gap: 16px; border-top: 1px solid #d1cabd; font-weight: 500; }
+.workwear-benefits span { display: grid; width: 27px; height: 27px; flex: 0 0 auto; place-items: center; border: 1px solid #8d7954; border-radius: 50%; color: #715f3f; font-size: .78rem; }
+.workwear-process { background: #1b1c19; color: var(--white); }
+.workwear-process__line { position: relative; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.workwear-process__line::before { position: absolute; top: 54px; right: 6%; left: 6%; height: 1px; background: #50514b; content: ""; }
+.workwear-process__step { position: relative; z-index: 1; min-width: 0; padding-right: 12px; }
+.workwear-process__step > span { display: block; margin-bottom: 25px; color: #999a92; font-size: .72rem; }
+.workwear-process__step svg { width: 50px; height: 50px; margin-bottom: 23px; padding: 12px; border: 1px solid #64655e; border-radius: 50%; background: #1b1c19; fill: none; stroke: #d2c4a8; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+.workwear-process__step h3 { margin: 0; font-size: 1rem; letter-spacing: -.02em; }
+.workwear-cta { padding: 92px 0; background: #c3af86; }
+.workwear-cta__inner { display: flex; align-items: end; justify-content: space-between; gap: 60px; }
+.workwear-cta h2 { max-width: 760px; margin-bottom: 18px; }
+.workwear-cta p { max-width: 690px; margin: 0; color: #403a2f; }
+.workwear-cta .button-row { flex: 0 0 auto; }
+.workwear-footer__grid { grid-template-columns: 1.5fr .8fr 1.1fr .8fr 1.1fr; gap: 42px; }
+.workwear-footer .footer-col a, .workwear-footer .footer-col span { margin: 7px 0; font-size: .84rem; }
+
+@media (min-width: 1025px) and (max-width: 1240px) {
+  .header-brand { width: 190px; max-width: 190px; }
+  .main-nav { gap: 12px; }
+  .main-nav a { font-size: 13px; }
+  .header-cta { padding-inline: 16px; font-size: 13px; }
+}
+
+@media (max-width: 1024px) {
+  .workwear-hero { padding-top: 120px; }
+  .workwear-hero__grid { gap: 34px; }
+  .workwear-hero h1 { font-size: clamp(3rem, 6.5vw, 4rem); }
+  .workwear-product-grid, .workwear-sector-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .workwear-footer__grid { grid-template-columns: repeat(2, 1fr); }
+  .workwear-footer .footer-brand { grid-column: 1 / -1; }
+}
+
+@media (max-width: 768px) {
+  .workwear-page h2 { font-size: clamp(2rem, 8.5vw, 3rem); }
+  .workwear-hero { padding: 104px 0 38px; }
+  .workwear-hero__grid, .workwear-statement__grid, .workwear-direct__grid { grid-template-columns: 1fr; }
+  .workwear-hero__copy { max-width: 620px; }
+  .workwear-hero h1 { max-width: 620px; margin-bottom: 18px; font-size: clamp(2.65rem, 10vw, 3.45rem); }
+  .workwear-hero .button-row { margin-top: 26px; }
+  .workwear-hero__media { border-radius: 14px; }
+  .workwear-statement { padding: 62px 0; }
+  .workwear-statement__grid { gap: 30px; }
+  .workwear-statement h2 { margin-bottom: 22px; }
+  .workwear-statement p { font-size: 1.05rem; line-height: 1.65; }
+  .workwear-heading { margin-bottom: 36px; }
+  .workwear-product-grid { gap: 16px; }
+  .workwear-product-card h3 { padding: 18px; font-size: 1.15rem; }
+  .workwear-detail-grid { grid-template-columns: 1fr; }
+  .workwear-detail-card { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(150px, .8fr); align-items: center; }
+  .workwear-detail-card img { aspect-ratio: 4 / 3; }
+  .workwear-sector-card { min-height: 170px; padding: 24px; }
+  .workwear-sector-card svg { margin-bottom: 30px; }
+  .workwear-direct__grid { gap: 34px; }
+  .workwear-process__line { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 38px 18px; }
+  .workwear-process__line::before { display: none; }
+  .workwear-process__step { padding-top: 18px; border-top: 1px solid #50514b; }
+  .workwear-process__step > span { margin-bottom: 16px; }
+  .workwear-process__step svg { margin-bottom: 16px; }
+  .workwear-cta { padding: 62px 0; }
+  .workwear-cta__inner { display: block; }
+  .workwear-cta .button-row { margin-top: 30px; }
+}
+
+@media (max-width: 480px) {
+  .workwear-hero { padding-top: 96px; }
+  .workwear-hero h1 { font-size: clamp(2.35rem, 11.5vw, 2.85rem); }
+  .workwear-hero .button-row, .workwear-cta .button-row { display: grid; grid-template-columns: 1fr; width: 100%; }
+  .workwear-hero .btn, .workwear-cta .btn { width: 100%; min-height: 52px; }
+  .workwear-hero__media img { aspect-ratio: 4 / 3; object-position: center; }
+  .workwear-product-grid { grid-template-columns: 1fr; }
+  .workwear-detail-card { display: block; }
+  .workwear-detail-card div { padding: 18px 20px 20px; }
+  .workwear-sector-grid { grid-template-columns: 1fr; }
+  .workwear-sector-card { min-height: 145px; }
+  .workwear-sector-card svg { margin-bottom: 22px; }
+  .workwear-footer__grid { grid-template-columns: 1fr; }
+  .workwear-footer .footer-brand { grid-column: auto; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
