@@ -161,6 +161,15 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
 .page-hero { padding: 190px 0 90px; border-bottom: 1px solid var(--line); }
 .page-hero h1 { max-width: 1000px; margin-bottom: 30px; font-size: clamp(3.5rem, 8vw, 7rem); }
 .page-hero .lead { max-width: 700px; }
+.production-page-hero { padding: 128px 0 64px; border-bottom: 1px solid var(--line); }
+.production-page-hero__grid { display: grid; grid-template-columns: minmax(0, .75fr) minmax(0, 1fr); align-items: center; gap: clamp(42px, 6vw, 88px); }
+.production-page-hero__copy { max-width: 560px; }
+.production-page-hero h1 { margin-bottom: 25px; font-size: clamp(3.5rem, 4.7vw, 4.25rem); line-height: 1.02; letter-spacing: -.045em; }
+.production-page-hero .lead { max-width: 540px; color: var(--muted); font-size: clamp(1rem, 1.18vw, 1.14rem); line-height: 1.7; }
+.production-page-hero .text-link { margin-top: 26px; }
+.production-page-hero .production-hero-media { min-height: 0; aspect-ratio: 1.28 / 1; }
+.production-page-hero .production-hero-media img { height: 100%; }
+#kumas-arastirma { scroll-margin-top: 96px; }
 .story-row { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(40px, 8vw, 110px); padding: 76px 0; border-bottom: 1px solid var(--line); }
 .story-row:nth-child(even) .story-row__media { order: -1; }
 .story-row p { color: var(--muted); font-size: 1.05rem; }
@@ -231,6 +240,9 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
   .process-row { grid-template-columns: .2fr 1fr; }
   .process-row .media-placeholder { grid-column: 2; }
   .page-hero { padding-top: 160px; }
+  .production-page-hero { padding-top: 112px; }
+  .production-page-hero__grid { gap: 34px; }
+  .production-page-hero h1 { font-size: clamp(3rem, 5.7vw, 3.65rem); }
   .contact-grid { gap: 60px; }
   .product-gallery-viewer { grid-template-columns: minmax(0, 1fr) 72px; gap: 12px; }
   .product-thumbnails { gap: 8px; }
@@ -281,6 +293,13 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
   .timeline__item h3 { max-width: none; }
   .page-hero { padding: 124px 0 54px; }
   .page-hero h1 { margin-bottom: 20px; font-size: clamp(2.75rem, 12vw, 4.6rem); line-height: 1; overflow-wrap: anywhere; }
+  .production-page-hero { padding: 104px 0 46px; }
+  .production-page-hero__grid { grid-template-columns: 1fr; gap: 34px; }
+  .production-page-hero__copy { max-width: 620px; }
+  .production-page-hero h1 { margin-bottom: 20px; font-size: clamp(2.55rem, 10vw, 3.7rem); overflow-wrap: normal; }
+  .production-page-hero .lead { font-size: clamp(1rem, 3.8vw, 1.12rem); line-height: 1.62; }
+  .production-page-hero .text-link { margin-top: 22px; }
+  .production-page-hero .production-hero-media { aspect-ratio: 4 / 3; }
   .story-row { padding: 44px 0; }
   .story-row p { font-size: 1rem; line-height: 1.72; }
   .quote-panel { padding: 32px 24px; border-radius: 14px; }
