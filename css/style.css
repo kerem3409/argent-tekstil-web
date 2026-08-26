@@ -727,3 +727,75 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
   .about-approach__grid { grid-template-columns: 1fr; }
   .about-approach__item { min-height: auto; }
 }
+
+/* Custom production page */
+.custom-production-page { background: #f4f1ea; }
+.custom-hero { padding: 142px 0 70px; border-bottom: 1px solid var(--line); }
+.custom-hero > .container { max-width: var(--container); }
+.custom-hero h1 { max-width: 850px; margin-bottom: 22px; font-size: clamp(3.25rem, 5.3vw, 5.5rem); line-height: 1.02; }
+.custom-hero p { max-width: 690px; margin: 0; color: var(--muted); font-size: clamp(1.04rem, 1.35vw, 1.2rem); line-height: 1.65; }
+.custom-section { padding: 88px 0; }
+.custom-split { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: center; gap: clamp(48px, 7vw, 96px); }
+.custom-copy { max-width: 580px; }
+.custom-copy h2, .custom-heading h2 { margin-bottom: 20px; font-size: clamp(2.15rem, 3.35vw, 3.35rem); line-height: 1.08; }
+.custom-copy p { margin-bottom: 16px; color: var(--muted); font-size: 1.03rem; line-height: 1.72; }
+.custom-copy p:last-child { margin-bottom: 0; }
+.custom-media { margin: 0; overflow: hidden; border-radius: 6px; background: #d7d5d0; }
+.custom-media img { width: 100%; height: 480px; object-fit: cover; }
+.custom-development { background: #f8f6f1; }
+.custom-heading { max-width: 680px; margin-bottom: 42px; }
+.custom-heading h2 { margin-bottom: 0; }
+.custom-workflow { background: #e8e3d9; }
+.custom-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #c9c1b3; border-left: 1px solid #c9c1b3; }
+.custom-step { min-height: 220px; padding: 27px 28px 30px; border-right: 1px solid #c9c1b3; border-bottom: 1px solid #c9c1b3; }
+.custom-step > span { display: block; margin-bottom: 42px; color: #8b816e; font-size: .7rem; letter-spacing: .15em; }
+.custom-step h3 { margin-bottom: 12px; font-size: 1.25rem; letter-spacing: -.025em; }
+.custom-step p { max-width: 330px; margin: 0; color: var(--muted); font-size: .92rem; line-height: 1.6; }
+.custom-identity { background: #191a17; color: #fff; }
+.custom-identity .custom-split { grid-template-columns: 1.08fr .92fr; }
+.custom-identity .eyebrow { color: #aaa79e; }
+.custom-identity .custom-copy p { color: #c1c1b9; }
+.custom-identity .custom-media { background: #0d0e0c; }
+.custom-cta { padding: 62px 0; background: #b5a27c; }
+.custom-cta__inner { display: flex; align-items: end; justify-content: space-between; gap: 34px; }
+.custom-cta h2 { max-width: 680px; margin-bottom: 12px; font-size: clamp(2rem, 3.2vw, 3.2rem); line-height: 1.06; }
+.custom-cta p { max-width: 650px; margin: 0; color: #353329; }
+.custom-cta .btn { min-width: 150px; flex: 0 0 auto; }
+
+@media (max-width: 1024px) {
+  .custom-hero { padding: 126px 0 62px; }
+  .custom-hero h1 { font-size: clamp(3rem, 6.5vw, 4.5rem); }
+  .custom-split { gap: 46px; }
+  .custom-media img { height: 430px; }
+}
+
+@media (max-width: 768px) {
+  .custom-hero { padding: 108px 0 50px; }
+  .custom-hero h1 { font-size: clamp(2.65rem, 10vw, 3.75rem); }
+  .custom-section { padding: 66px 0; }
+  .custom-split, .custom-identity .custom-split { grid-template-columns: 1fr; gap: 34px; }
+  .custom-copy h2, .custom-heading h2 { font-size: clamp(2rem, 7vw, 2.8rem); }
+  .custom-media img { height: auto; aspect-ratio: 4 / 3; }
+  .custom-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .custom-step { min-height: 210px; padding: 24px; }
+  .custom-step > span { margin-bottom: 32px; }
+  .custom-identity .custom-copy { order: 1; }
+  .custom-identity .custom-media { order: 2; }
+  .custom-cta__inner { display: block; }
+  .custom-cta .btn { margin-top: 28px; }
+}
+
+@media (max-width: 480px) {
+  .custom-hero { padding: 94px 0 42px; }
+  .custom-hero h1 { margin-bottom: 17px; font-size: clamp(2.35rem, 11vw, 2.9rem); line-height: 1.04; }
+  .custom-hero p { font-size: 1rem; line-height: 1.6; }
+  .custom-section { padding: 54px 0; }
+  .custom-heading { margin-bottom: 30px; }
+  .custom-copy h2, .custom-heading h2 { font-size: clamp(1.9rem, 8vw, 2.4rem); }
+  .custom-steps { grid-template-columns: 1fr; }
+  .custom-step { min-height: 0; padding: 24px 22px 26px; }
+  .custom-step > span { margin-bottom: 22px; }
+  .custom-cta { padding: 50px 0; }
+  .custom-cta h2 { font-size: clamp(1.85rem, 8vw, 2.3rem); }
+  .custom-cta .btn { width: 100%; min-height: 52px; }
+}
