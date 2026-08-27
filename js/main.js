@@ -54,6 +54,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const form = document.querySelector('#contact-form');
+  const requestedProduct = new URLSearchParams(window.location.search).get('urun');
+  const productSelect = form?.elements.namedItem('product');
+
+  if (requestedProduct && productSelect instanceof HTMLSelectElement) {
+    const requestedOption = Array.from(productSelect.options).find(option => option.value === requestedProduct);
+    if (requestedOption) productSelect.value = requestedProduct;
+  }
+
   form?.addEventListener('submit', event => {
     event.preventDefault();
 
@@ -64,6 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const formData = new FormData(form);
     const value = field => String(formData.get(field) || '').trim();
+    const productLabel = productSelect instanceof HTMLSelectElement
+      ? productSelect.selectedOptions[0]?.textContent?.trim()
+      : value('product');
     const lines = [
       '*ARGENT TEKSTİL - YENİ ÜRETİM TALEBİ*',
       '',
@@ -73,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (value('company')) lines.push(`Firma / Marka: ${value('company')}`);
     lines.push(`Telefon: ${value('phone')}`);
     if (value('email')) lines.push(`E-posta: ${value('email')}`);
-    lines.push(`Ürün Grubu: ${value('product')}`);
+    lines.push(`Ürün Grubu: ${productLabel}`);
     if (value('quantity')) lines.push(`Tahmini Adet: ${value('quantity')}`);
     lines.push('', 'Mesaj:', value('message'));
 
