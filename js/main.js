@@ -4,6 +4,36 @@ document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('.site-header');
   const menuButton = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.main-nav');
+  const brandIntro = document.querySelector('[data-brand-intro]');
+
+  if (brandIntro) {
+    const introWasShown = root.classList.contains('intro-seen');
+
+    if (introWasShown) {
+      brandIntro.remove();
+      root.classList.remove('intro-pending');
+    } else {
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let introFinished = false;
+      body.classList.add('intro-active');
+      root.classList.add('intro-active');
+
+      const finishIntro = () => {
+        if (introFinished) return;
+        introFinished = true;
+        body.classList.remove('intro-active');
+        root.classList.remove('intro-active');
+        root.classList.add('intro-complete');
+        brandIntro.style.pointerEvents = 'none';
+        window.setTimeout(() => brandIntro.remove(), reducedMotion ? 20 : 80);
+        window.setTimeout(() => root.classList.remove('intro-pending'), reducedMotion ? 20 : 180);
+      };
+
+      window.setTimeout(finishIntro, 1900);
+      try { sessionStorage.setItem('argentIntroShown', '1'); } catch (error) { /* Intro still closes safely. */ }
+      window.setTimeout(finishIntro, reducedMotion ? 180 : 1500);
+    }
+  }
 
   if (nav && !nav.querySelector('.mobile-nav-cta')) {
     const mobileCta = document.createElement('a');
