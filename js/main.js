@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
         window.setTimeout(() => root.classList.remove('intro-pending'), reducedMotion ? 20 : 180);
       };
 
-      window.setTimeout(finishIntro, 2400);
+      window.setTimeout(finishIntro, 3500);
       try { sessionStorage.setItem('argentIntroShown', '1'); } catch (error) { /* Intro still closes safely. */ }
-      window.setTimeout(finishIntro, reducedMotion ? 180 : 2100);
+      window.setTimeout(finishIntro, reducedMotion ? 180 : 3000);
     }
   }
 
