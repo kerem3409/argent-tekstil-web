@@ -151,8 +151,8 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
 }
 @media (min-width: 1025px) {
   .nav-wrap { height: 96px; }
-  .header-brand { width: 270px; max-width: 270px; max-height: 68px; }
-  .header-brand img { width: 100%; max-height: 68px; height: auto; object-fit: contain; }
+  .header-brand { width: 320px; max-width: 320px; max-height: 60px; }
+  .header-brand img { width: 100%; max-height: 60px; height: auto; object-fit: contain; }
   .main-nav { gap: 30px; }
   .main-nav a { font-size: 16px; font-weight: 500; }
   .header-cta { min-height: 48px; padding-inline: 24px; font-size: 15px; }
@@ -287,7 +287,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
   .container { width: min(calc(100% - 40px), var(--container)); }
   .nav-wrap { height: 76px; }
   .header-brand { width: 174px; max-height: 44px; }
-  .header-brand img { max-height: 42px; }
+  .header-brand img { max-height: 44px; }
   .brand { font-size: .96rem; letter-spacing: .105em; }
   .section { padding: 62px 0; }
   .contact-main { padding-top: 104px; }
@@ -497,7 +497,8 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
 .workwear-footer .footer-col a, .workwear-footer .footer-col span { margin: 7px 0; font-size: .84rem; }
 
 @media (min-width: 1025px) and (max-width: 1240px) {
-  .header-brand { width: 205px; max-width: 205px; }
+  .header-brand { width: 230px; max-width: 230px; max-height: 56px; }
+  .header-brand img { max-height: 56px; }
   .main-nav { gap: 12px; }
   .main-nav a { font-size: 13px; }
   .header-cta { padding-inline: 16px; font-size: 13px; }
