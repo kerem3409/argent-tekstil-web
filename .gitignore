@@ -26,3 +26,7 @@ build/
 
 # Local development servers
 .serve/
+
+# Local image audit and browser tools (not site dependencies)
+.image-tools/
+.image-qa/
