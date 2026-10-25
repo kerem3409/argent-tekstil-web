@@ -1,0 +1,639 @@
+[
+  {
+    "from": "assets/images/home/hakkimizda-uretim-alani.png",
+    "to": "assets/images/home/hakkimizda-uretim-alani.webp",
+    "width": 1200,
+    "height": 800,
+    "oldBytes": 2190934,
+    "bytes": 91290,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/home/hero-uretim.png",
+    "to": "assets/images/home/hero-uretim.webp",
+    "width": 1536,
+    "height": 1024,
+    "oldBytes": 2169300,
+    "bytes": 100336,
+    "variants": [
+      {
+        "path": "assets/images/home/hero-uretim-640.webp",
+        "width": 640,
+        "bytes": 27646
+      },
+      {
+        "path": "assets/images/home/hero-uretim-960.webp",
+        "width": 960,
+        "bytes": 50118
+      },
+      {
+        "path": "assets/images/home/hero-uretim-1280.webp",
+        "width": 1280,
+        "bytes": 76766
+      }
+    ],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/home/is-elbiseleri.png",
+    "to": "assets/images/home/is-elbiseleri.webp",
+    "width": 1200,
+    "height": 800,
+    "oldBytes": 2212342,
+    "bytes": 76916,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/home/kategori-is-elbiseleri.png",
+    "to": "assets/images/home/kategori-is-elbiseleri.webp",
+    "width": 960,
+    "height": 640,
+    "oldBytes": 2124971,
+    "bytes": 52522,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/home/kategori-sweatshirt.png",
+    "to": "assets/images/home/kategori-sweatshirt.webp",
+    "width": 960,
+    "height": 640,
+    "oldBytes": 2740387,
+    "bytes": 47958,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/home/kategori-tisort.png",
+    "to": "assets/images/home/kategori-tisort.webp",
+    "width": 960,
+    "height": 640,
+    "oldBytes": 3008452,
+    "bytes": 59750,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/home/ozel-uretim.png",
+    "to": "assets/images/home/ozel-uretim.webp",
+    "width": 1200,
+    "height": 800,
+    "oldBytes": 2417912,
+    "bytes": 93186,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/is-elbiseleri/baski-detayi.webp",
+    "to": "assets/images/is-elbiseleri/baski-detayi.webp",
+    "width": 1100,
+    "height": 825,
+    "oldBytes": 33270,
+    "bytes": 33270,
+    "variants": [],
+    "skipped": true
+  },
+  {
+    "from": "assets/images/is-elbiseleri/dogrudan-uretim.webp",
+    "to": "assets/images/is-elbiseleri/dogrudan-uretim.webp",
+    "width": 1200,
+    "height": 900,
+    "oldBytes": 76842,
+    "bytes": 76842,
+    "variants": [],
+    "skipped": true
+  },
+  {
+    "from": "assets/images/is-elbiseleri/hero-is-elbiseleri.webp",
+    "to": "assets/images/is-elbiseleri/hero-is-elbiseleri.webp",
+    "width": 1600,
+    "height": 900,
+    "oldBytes": 71286,
+    "bytes": 71286,
+    "variants": [
+      {
+        "path": "assets/images/is-elbiseleri/hero-is-elbiseleri-640.webp",
+        "width": 640,
+        "bytes": 20526
+      },
+      {
+        "path": "assets/images/is-elbiseleri/hero-is-elbiseleri-960.webp",
+        "width": 960,
+        "bytes": 33290
+      },
+      {
+        "path": "assets/images/is-elbiseleri/hero-is-elbiseleri-1280.webp",
+        "width": 1280,
+        "bytes": 44736
+      }
+    ],
+    "skipped": true
+  },
+  {
+    "from": "assets/images/is-elbiseleri/is-onlugu.webp",
+    "to": "assets/images/is-elbiseleri/is-onlugu.webp",
+    "width": 900,
+    "height": 900,
+    "oldBytes": 17476,
+    "bytes": 17476,
+    "variants": [],
+    "skipped": true
+  },
+  {
+    "from": "assets/images/is-elbiseleri/is-pantolonu.webp",
+    "to": "assets/images/is-elbiseleri/is-pantolonu.webp",
+    "width": 900,
+    "height": 900,
+    "oldBytes": 14068,
+    "bytes": 14068,
+    "variants": [],
+    "skipped": true
+  },
+  {
+    "from": "assets/images/is-elbiseleri/nakis-detayi.webp",
+    "to": "assets/images/is-elbiseleri/nakis-detayi.webp",
+    "width": 1100,
+    "height": 825,
+    "oldBytes": 76702,
+    "bytes": 76702,
+    "variants": [],
+    "skipped": true
+  },
+  {
+    "from": "assets/images/is-elbiseleri/ozel-etiket.webp",
+    "to": "assets/images/is-elbiseleri/ozel-etiket.webp",
+    "width": 1100,
+    "height": 825,
+    "oldBytes": 222272,
+    "bytes": 222272,
+    "variants": [],
+    "skipped": true
+  },
+  {
+    "from": "assets/images/is-elbiseleri/polo-yaka.webp",
+    "to": "assets/images/is-elbiseleri/polo-yaka.webp",
+    "width": 900,
+    "height": 900,
+    "oldBytes": 31394,
+    "bytes": 31394,
+    "variants": [],
+    "skipped": true
+  },
+  {
+    "from": "assets/images/is-elbiseleri/sapka-aksesuar.webp",
+    "to": "assets/images/is-elbiseleri/sapka-aksesuar.webp",
+    "width": 900,
+    "height": 900,
+    "oldBytes": 51154,
+    "bytes": 51154,
+    "variants": [],
+    "skipped": true
+  },
+  {
+    "from": "assets/images/is-elbiseleri/sifir-yaka.webp",
+    "to": "assets/images/is-elbiseleri/sifir-yaka.webp",
+    "width": 900,
+    "height": 900,
+    "oldBytes": 16854,
+    "bytes": 16854,
+    "variants": [],
+    "skipped": true
+  },
+  {
+    "from": "assets/images/is-elbiseleri/sweatshirt-ust-giyim.webp",
+    "to": "assets/images/is-elbiseleri/sweatshirt-ust-giyim.webp",
+    "width": 900,
+    "height": 900,
+    "oldBytes": 42410,
+    "bytes": 42410,
+    "variants": [],
+    "skipped": true
+  },
+  {
+    "from": "assets/images/logo/argent-logo.png",
+    "to": "assets/images/logo/argent-logo.png",
+    "width": 1000,
+    "height": 333,
+    "oldBytes": 228591,
+    "bytes": 27820,
+    "variants": []
+  },
+  {
+    "from": "assets/images/ozel-uretim/etiket-aksesuar-ambalaj.png",
+    "to": "assets/images/ozel-uretim/etiket-aksesuar-ambalaj.webp",
+    "width": 1200,
+    "height": 800,
+    "oldBytes": 2434073,
+    "bytes": 87104,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/ozel-uretim/private-label-product-development.png",
+    "to": "assets/images/ozel-uretim/private-label-product-development.webp",
+    "width": 1200,
+    "height": 800,
+    "oldBytes": 2670467,
+    "bytes": 100314,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/esofman/esofman-back.jpg",
+    "to": "assets/images/products/esofman/esofman-back.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 58450,
+    "bytes": 20286,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/esofman/esofman-detail-1.jpg",
+    "to": "assets/images/products/esofman/esofman-detail-1.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 155603,
+    "bytes": 84560,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/esofman/esofman-detail-2.jpg",
+    "to": "assets/images/products/esofman/esofman-detail-2.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 113014,
+    "bytes": 51436,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/esofman/esofman-front.jpg",
+    "to": "assets/images/products/esofman/esofman-front.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 60727,
+    "bytes": 20482,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/fermuarli-sweatshirt/fermuarli-sweatshirt-back.jpg",
+    "to": "assets/images/products/fermuarli-sweatshirt/fermuarli-sweatshirt-back.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 77258,
+    "bytes": 27766,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/fermuarli-sweatshirt/fermuarli-sweatshirt-detail-1.jpg",
+    "to": "assets/images/products/fermuarli-sweatshirt/fermuarli-sweatshirt-detail-1.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 144245,
+    "bytes": 81720,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/fermuarli-sweatshirt/fermuarli-sweatshirt-detail-2.jpg",
+    "to": "assets/images/products/fermuarli-sweatshirt/fermuarli-sweatshirt-detail-2.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 136859,
+    "bytes": 76160,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/fermuarli-sweatshirt/fermuarli-sweatshirt-front.jpg",
+    "to": "assets/images/products/fermuarli-sweatshirt/fermuarli-sweatshirt-front.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 81178,
+    "bytes": 30690,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/hoodie/hoodie-back.jpg",
+    "to": "assets/images/products/hoodie/hoodie-back.webp",
+    "width": 501,
+    "height": 626,
+    "oldBytes": 60568,
+    "bytes": 17552,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/hoodie/hoodie-detail-1.jpg",
+    "to": "assets/images/products/hoodie/hoodie-detail-1.webp",
+    "width": 501,
+    "height": 626,
+    "oldBytes": 122547,
+    "bytes": 68080,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/hoodie/hoodie-detail-2.jpg",
+    "to": "assets/images/products/hoodie/hoodie-detail-2.webp",
+    "width": 501,
+    "height": 626,
+    "oldBytes": 121255,
+    "bytes": 72864,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/hoodie/hoodie-front.jpg",
+    "to": "assets/images/products/hoodie/hoodie-front.webp",
+    "width": 501,
+    "height": 626,
+    "oldBytes": 65361,
+    "bytes": 19404,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/oversize/oversize-back.jpg",
+    "to": "assets/images/products/oversize/oversize-back.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 44283,
+    "bytes": 7344,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/oversize/oversize-detail-1.jpg",
+    "to": "assets/images/products/oversize/oversize-detail-1.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 102723,
+    "bytes": 47108,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/oversize/oversize-detail-2.jpg",
+    "to": "assets/images/products/oversize/oversize-detail-2.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 85962,
+    "bytes": 31668,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/oversize/oversize-front.jpg",
+    "to": "assets/images/products/oversize/oversize-front.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 44859,
+    "bytes": 8016,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/polo-yaka/polo-back.jpg",
+    "to": "assets/images/products/polo-yaka/polo-back.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 43566,
+    "bytes": 6954,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/polo-yaka/polo-detail-1.jpg",
+    "to": "assets/images/products/polo-yaka/polo-detail-1.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 139649,
+    "bytes": 74524,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/polo-yaka/polo-detail-2.jpg",
+    "to": "assets/images/products/polo-yaka/polo-detail-2.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 119943,
+    "bytes": 56694,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/polo-yaka/polo-front.jpg",
+    "to": "assets/images/products/polo-yaka/polo-front.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 45013,
+    "bytes": 8330,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/sifir-yaka/sifir-yaka-back.jpg",
+    "to": "assets/images/products/sifir-yaka/sifir-yaka-back.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 40327,
+    "bytes": 6240,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/sifir-yaka/sifir-yaka-detail-1.jpg",
+    "to": "assets/images/products/sifir-yaka/sifir-yaka-detail-1.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 101577,
+    "bytes": 43536,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/sifir-yaka/sifir-yaka-detail-2.jpg",
+    "to": "assets/images/products/sifir-yaka/sifir-yaka-detail-2.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 68070,
+    "bytes": 17314,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/sifir-yaka/sifir-yaka-front.jpg",
+    "to": "assets/images/products/sifir-yaka/sifir-yaka-front.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 41440,
+    "bytes": 6898,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/sortlu-takim/sortlu-takim-back.jpg",
+    "to": "assets/images/products/sortlu-takim/sortlu-takim-back.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 45671,
+    "bytes": 10202,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/sortlu-takim/sortlu-takim-detail-1.jpg",
+    "to": "assets/images/products/sortlu-takim/sortlu-takim-detail-1.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 122035,
+    "bytes": 61322,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/sortlu-takim/sortlu-takim-detail-2.jpg",
+    "to": "assets/images/products/sortlu-takim/sortlu-takim-detail-2.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 117980,
+    "bytes": 54362,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/products/sortlu-takim/sortlu-takim-front.jpg",
+    "to": "assets/images/products/sortlu-takim/sortlu-takim-front.webp",
+    "width": 561,
+    "height": 701,
+    "oldBytes": 46738,
+    "bytes": 11468,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/uretim/baski-nakis.jpg",
+    "to": "assets/images/uretim/baski-nakis.webp",
+    "width": 1200,
+    "height": 900,
+    "oldBytes": 179765,
+    "bytes": 67176,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/uretim/dikim.jpg",
+    "to": "assets/images/uretim/dikim.webp",
+    "width": 1200,
+    "height": 900,
+    "oldBytes": 172818,
+    "bytes": 57478,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/uretim/etiket-aksesuar.jpg",
+    "to": "assets/images/uretim/etiket-aksesuar.webp",
+    "width": 1200,
+    "height": 900,
+    "oldBytes": 351426,
+    "bytes": 173376,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/uretim/kalip-urun-gelistirme.jpg",
+    "to": "assets/images/uretim/kalip-urun-gelistirme.webp",
+    "width": 1200,
+    "height": 900,
+    "oldBytes": 218341,
+    "bytes": 75046,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/uretim/kalite-kontrol.jpg",
+    "to": "assets/images/uretim/kalite-kontrol.webp",
+    "width": 1200,
+    "height": 900,
+    "oldBytes": 164169,
+    "bytes": 47678,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/uretim/kesim.jpg",
+    "to": "assets/images/uretim/kesim.webp",
+    "width": 1200,
+    "height": 900,
+    "oldBytes": 222447,
+    "bytes": 80814,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/uretim/kumas-arastirma.jpg",
+    "to": "assets/images/uretim/kumas-arastirma.webp",
+    "width": 1200,
+    "height": 900,
+    "oldBytes": 248728,
+    "bytes": 105822,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/uretim/numune.jpg",
+    "to": "assets/images/uretim/numune.webp",
+    "width": 1200,
+    "height": 900,
+    "oldBytes": 170360,
+    "bytes": 49772,
+    "variants": [],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/uretim/uretim-hero.jpg",
+    "to": "assets/images/uretim/uretim-hero.webp",
+    "width": 1600,
+    "height": 900,
+    "oldBytes": 231711,
+    "bytes": 95336,
+    "variants": [
+      {
+        "path": "assets/images/uretim/uretim-hero-640.webp",
+        "width": 640,
+        "bytes": 32554
+      },
+      {
+        "path": "assets/images/uretim/uretim-hero-960.webp",
+        "width": 960,
+        "bytes": 52534
+      },
+      {
+        "path": "assets/images/uretim/uretim-hero-1280.webp",
+        "width": 1280,
+        "bytes": 74274
+      }
+    ],
+    "skipped": false
+  },
+  {
+    "from": "assets/images/uretim/utu-paketleme.jpg",
+    "to": "assets/images/uretim/utu-paketleme.webp",
+    "width": 1200,
+    "height": 900,
+    "oldBytes": 191570,
+    "bytes": 60642,
+    "variants": [],
+    "skipped": false
+  }
+]
