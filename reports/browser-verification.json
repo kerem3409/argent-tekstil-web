@@ -1,0 +1,292 @@
+[
+  {
+    "page": "hakkimizda.html",
+    "width": 390,
+    "textUnchanged": true,
+    "maxGeometryDelta": 0,
+    "broken": 0,
+    "httpErrors": 0,
+    "cls": 0,
+    "lcpBeforeMs": 7104,
+    "lcpAfterMs": 7068,
+    "lcp": {
+      "time": 7068,
+      "size": 45530,
+      "tag": "P",
+      "source": "",
+      "text": "Argent Tekstil’in geçmişi tekstil sektöründeki uzun yıllara dayanan ürün, kumaş ve müşteri"
+    },
+    "galleryChecks": 0,
+    "imageBytesInitiallyRequested": 27820
+  },
+  {
+    "page": "iletisim.html",
+    "width": 390,
+    "textUnchanged": true,
+    "maxGeometryDelta": 0,
+    "broken": 0,
+    "httpErrors": 0,
+    "cls": 0,
+    "lcpBeforeMs": 1016,
+    "lcpAfterMs": 984,
+    "lcp": {
+      "time": 984,
+      "size": 16380,
+      "tag": "ADDRESS",
+      "source": "",
+      "text": "Ata Mahallesi, Afrodisias Bulvarı,Demirciler Sitesi No: 6,Efeler / Aydın"
+    },
+    "galleryChecks": 0,
+    "imageBytesInitiallyRequested": 27820
+  },
+  {
+    "page": "index.html",
+    "width": 390,
+    "textUnchanged": true,
+    "maxGeometryDelta": 0,
+    "broken": 0,
+    "httpErrors": 0,
+    "cls": 0,
+    "lcpBeforeMs": 3392,
+    "lcpAfterMs": 3336,
+    "lcp": {
+      "time": 3336,
+      "size": 79330,
+      "tag": "IMG",
+      "source": "http://127.0.0.1:5191/assets/images/home/hero-uretim-640.webp",
+      "text": ""
+    },
+    "galleryChecks": 0,
+    "imageBytesInitiallyRequested": 206506,
+    "heroResource": "http://127.0.0.1:5191/assets/images/home/hero-uretim-640.webp"
+  },
+  {
+    "page": "is-elbiseleri.html",
+    "width": 390,
+    "textUnchanged": true,
+    "maxGeometryDelta": 0,
+    "broken": 0,
+    "httpErrors": 0,
+    "cls": 0,
+    "lcpBeforeMs": 1068,
+    "lcpAfterMs": 1016,
+    "lcp": {
+      "time": 1016,
+      "size": 95944,
+      "tag": "IMG",
+      "source": "http://127.0.0.1:5191/assets/images/is-elbiseleri/hero-is-elbiseleri-640.webp",
+      "text": ""
+    },
+    "galleryChecks": 0,
+    "imageBytesInitiallyRequested": 96594,
+    "heroResource": "http://127.0.0.1:5191/assets/images/is-elbiseleri/hero-is-elbiseleri-640.webp"
+  },
+  {
+    "page": "ozel-uretim.html",
+    "width": 390,
+    "textUnchanged": true,
+    "maxGeometryDelta": 0,
+    "broken": 0,
+    "httpErrors": 0,
+    "cls": 0,
+    "lcpBeforeMs": 1020,
+    "lcpAfterMs": 984,
+    "lcp": {
+      "time": 984,
+      "size": 36668,
+      "tag": "P",
+      "source": "",
+      "text": "Bir marka kurmak için her detayın hazır olması gerekmez. Elinizde bir ürün fikri, beğendiğ"
+    },
+    "galleryChecks": 0,
+    "imageBytesInitiallyRequested": 128134,
+    "heroResource": "http://127.0.0.1:5191/assets/images/ozel-uretim/private-label-product-development.webp"
+  },
+  {
+    "page": "uretim.html",
+    "width": 390,
+    "textUnchanged": true,
+    "maxGeometryDelta": 0,
+    "broken": 0,
+    "httpErrors": 0,
+    "cls": 0,
+    "lcpBeforeMs": 1068,
+    "lcpAfterMs": 992,
+    "lcp": {
+      "time": 992,
+      "size": 95944,
+      "tag": "IMG",
+      "source": "http://127.0.0.1:5191/assets/images/uretim/uretim-hero-640.webp",
+      "text": ""
+    },
+    "galleryChecks": 0,
+    "imageBytesInitiallyRequested": 291014,
+    "heroResource": "http://127.0.0.1:5191/assets/images/uretim/uretim-hero-640.webp"
+  },
+  {
+    "page": "urunler.html",
+    "width": 390,
+    "textUnchanged": true,
+    "maxGeometryDelta": 0,
+    "broken": 0,
+    "httpErrors": 0,
+    "cls": 0,
+    "lcpBeforeMs": 1000,
+    "lcpAfterMs": 996,
+    "lcp": {
+      "time": 996,
+      "size": 136348,
+      "tag": "IMG",
+      "source": "http://127.0.0.1:5191/assets/images/products/polo-yaka/polo-front.webp",
+      "text": ""
+    },
+    "galleryChecks": 28,
+    "imageBytesInitiallyRequested": 256326,
+    "heroResource": "http://127.0.0.1:5191/assets/images/products/polo-yaka/polo-front.webp"
+  },
+  {
+    "page": "hakkimizda.html",
+    "width": 1440,
+    "textUnchanged": true,
+    "maxGeometryDelta": 0,
+    "broken": 0,
+    "httpErrors": 0,
+    "cls": 0,
+    "lcpBeforeMs": 7148,
+    "lcpAfterMs": 7044,
+    "lcp": {
+      "time": 7044,
+      "size": 51681,
+      "tag": "P",
+      "source": "",
+      "text": "Argent Tekstil’in geçmişi tekstil sektöründeki uzun yıllara dayanan ürün, kumaş ve müşteri"
+    },
+    "galleryChecks": 0,
+    "imageBytesInitiallyRequested": 27820
+  },
+  {
+    "page": "iletisim.html",
+    "width": 1440,
+    "textUnchanged": true,
+    "maxGeometryDelta": 0,
+    "broken": 0,
+    "httpErrors": 0,
+    "cls": 0,
+    "lcpBeforeMs": 1060,
+    "lcpAfterMs": 968,
+    "lcp": {
+      "time": 968,
+      "size": 45866,
+      "tag": "H1",
+      "source": "",
+      "text": "Üretim talebinizi paylaşın."
+    },
+    "galleryChecks": 0,
+    "imageBytesInitiallyRequested": 27820
+  },
+  {
+    "page": "index.html",
+    "width": 1440,
+    "textUnchanged": true,
+    "maxGeometryDelta": 0,
+    "broken": 0,
+    "httpErrors": 0,
+    "cls": 0,
+    "lcpBeforeMs": 3396,
+    "lcpAfterMs": 3496,
+    "lcp": {
+      "time": 3496,
+      "size": 406510,
+      "tag": "IMG",
+      "source": "http://127.0.0.1:5191/assets/images/home/hero-uretim-960.webp",
+      "text": ""
+    },
+    "galleryChecks": 0,
+    "imageBytesInitiallyRequested": 329458,
+    "heroResource": "http://127.0.0.1:5191/assets/images/home/hero-uretim-960.webp"
+  },
+  {
+    "page": "is-elbiseleri.html",
+    "width": 1440,
+    "textUnchanged": true,
+    "maxGeometryDelta": 0,
+    "broken": 0,
+    "httpErrors": 0,
+    "cls": 0,
+    "lcpBeforeMs": 1068,
+    "lcpAfterMs": 1036,
+    "lcp": {
+      "time": 1036,
+      "size": 257979,
+      "tag": "IMG",
+      "source": "http://127.0.0.1:5191/assets/images/is-elbiseleri/hero-is-elbiseleri-960.webp",
+      "text": ""
+    },
+    "galleryChecks": 0,
+    "imageBytesInitiallyRequested": 234466,
+    "heroResource": "http://127.0.0.1:5191/assets/images/is-elbiseleri/hero-is-elbiseleri-960.webp"
+  },
+  {
+    "page": "ozel-uretim.html",
+    "width": 1440,
+    "textUnchanged": true,
+    "maxGeometryDelta": 0,
+    "broken": 0,
+    "httpErrors": 0,
+    "cls": 0,
+    "lcpBeforeMs": 328,
+    "lcpAfterMs": 1016,
+    "lcp": {
+      "time": 1016,
+      "size": 293743,
+      "tag": "IMG",
+      "source": "http://127.0.0.1:5191/assets/images/ozel-uretim/private-label-product-development.webp",
+      "text": ""
+    },
+    "galleryChecks": 0,
+    "imageBytesInitiallyRequested": 215238,
+    "heroResource": "http://127.0.0.1:5191/assets/images/ozel-uretim/private-label-product-development.webp"
+  },
+  {
+    "page": "uretim.html",
+    "width": 1440,
+    "textUnchanged": true,
+    "maxGeometryDelta": 0,
+    "broken": 0,
+    "httpErrors": 0,
+    "cls": 0,
+    "lcpBeforeMs": 1060,
+    "lcpAfterMs": 1008,
+    "lcp": {
+      "time": 1008,
+      "size": 339385,
+      "tag": "IMG",
+      "source": "http://127.0.0.1:5191/assets/images/uretim/uretim-hero-960.webp",
+      "text": ""
+    },
+    "galleryChecks": 0,
+    "imageBytesInitiallyRequested": 391808,
+    "heroResource": "http://127.0.0.1:5191/assets/images/uretim/uretim-hero-960.webp"
+  },
+  {
+    "page": "urunler.html",
+    "width": 1440,
+    "textUnchanged": true,
+    "maxGeometryDelta": 0,
+    "broken": 0,
+    "httpErrors": 0,
+    "cls": 0,
+    "lcpBeforeMs": 1024,
+    "lcpAfterMs": 1032,
+    "lcp": {
+      "time": 1032,
+      "size": 241482,
+      "tag": "IMG",
+      "source": "http://127.0.0.1:5191/assets/images/products/polo-yaka/polo-front.webp",
+      "text": ""
+    },
+    "galleryChecks": 28,
+    "imageBytesInitiallyRequested": 529894,
+    "heroResource": "http://127.0.0.1:5191/assets/images/products/polo-yaka/polo-front.webp"
+  }
+]

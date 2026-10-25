@@ -1,0 +1,29 @@
+{
+  "introPassed": true,
+  "results": [
+    {
+      "page": "index.html",
+      "dpr": 3,
+      "source": "http://127.0.0.1:5192/assets/images/home/hero-uretim-1280.webp",
+      "loading": "auto",
+      "priority": "high",
+      "menuPassed": true
+    },
+    {
+      "page": "uretim.html",
+      "dpr": 3,
+      "source": "http://127.0.0.1:5192/assets/images/uretim/uretim-hero-1280.webp",
+      "loading": "auto",
+      "priority": "high",
+      "menuPassed": true
+    },
+    {
+      "page": "is-elbiseleri.html",
+      "dpr": 3,
+      "source": "http://127.0.0.1:5192/assets/images/is-elbiseleri/hero-is-elbiseleri-1280.webp",
+      "loading": "auto",
+      "priority": "high",
+      "menuPassed": true
+    }
+  ]
+}

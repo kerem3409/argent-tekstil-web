@@ -18,14 +18,15 @@ const server=http.createServer((req,res)=>{
    for(const file of pages){
     const page=await context.newPage(), errors=[];
     page.on('response',r=>{if(r.status()>=400)errors.push(`${r.status()} ${r.url()}`)});
-    await page.addInitScript(()=>{window.__lcp=[];new PerformanceObserver(l=>l.getEntries().forEach(e=>window.__lcp.push({time:e.startTime,size:e.size,tag:e.element?.tagName,source:e.url,text:e.element?.textContent?.slice(0,90)}))).observe({type:'largest-contentful-paint',buffered:true});});
+    await page.addInitScript(()=>{window.__cls=0;new PerformanceObserver(l=>l.getEntries().forEach(e=>{if(!e.hadRecentInput)window.__cls+=e.value})).observe({type:'layout-shift',buffered:true});window.__lcp=[];new PerformanceObserver(l=>l.getEntries().forEach(e=>window.__lcp.push({time:e.startTime,size:e.size,tag:e.element?.tagName,source:e.url,text:e.element?.textContent?.slice(0,90)}))).observe({type:'largest-contentful-paint',buffered:true});});
     await page.goto(`http://127.0.0.1:5191/${file}`,{waitUntil:'networkidle'});
     await page.waitForTimeout(3700);
-    const initial=await page.evaluate(()=>({text:document.body.innerText,lcp:window.__lcp,images:[...document.images].map(i=>{const r=i.getBoundingClientRect();return {src:i.getAttribute('src'),currentSrc:i.currentSrc,width:r.width,height:r.height,top:r.top,loading:i.loading,priority:i.fetchPriority,naturalWidth:i.naturalWidth}}),scrollWidth:document.documentElement.scrollWidth}));
+    const initial=await page.evaluate(()=>({text:document.body.innerText,lcp:window.__lcp,cls:window.__cls,resources:performance.getEntriesByType('resource').filter(r=>r.initiatorType==='img').map(r=>({url:r.name,bytes:r.encodedBodySize})),images:[...document.images].map(i=>{const r=i.getBoundingClientRect();return {src:i.getAttribute('src'),currentSrc:i.currentSrc,width:r.width,height:r.height,top:r.top,loading:i.loading,priority:i.fetchPriority,naturalWidth:i.naturalWidth}}),scrollWidth:document.documentElement.scrollWidth}));
     await page.screenshot({path:`.image-qa/${label}-${viewport.width}-${file}.png`});
     for(let y=0;y<await page.evaluate(()=>document.body.scrollHeight);y+=650){await page.evaluate(y=>scrollTo(0,y),y);await page.waitForTimeout(80);}
     await page.waitForTimeout(600);
     const broken=await page.evaluate(()=>[...document.images].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.src));
+    await page.screenshot({path:`.image-qa/${label}-full-${viewport.width}-${file}.png`,fullPage:true});
     let gallery=[];
     if(file==='urunler.html'){
      for(const group of await page.locator('[data-product-gallery]').all()){
