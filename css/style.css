@@ -136,7 +136,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
 .catalog-personnel > p { max-width: 780px; color: var(--muted); }
 .catalog-personnel-list { display: flex; flex-wrap: wrap; gap: 12px 28px; margin: 24px 0 30px; padding: 0; list-style: none; font-size: .9rem; }
 .product-catalog-group .product-gallery-viewer { position: relative; }
-.product-thumbnails--fits { position: absolute; inset: 0 0 0 auto; width: 88px; height: 100%; min-height: 0; grid-template-rows: repeat(8, minmax(0, 1fr)); }
+.product-thumbnails.product-thumbnails--fits { position: absolute; inset: 0 0 0 auto; width: 88px; height: 100%; min-height: 0; grid-template-rows: repeat(8, minmax(0, 1fr)); }
 .product-thumbnails--fits .product-thumbnail { min-height: 0; }
 .product-thumbnails--single { align-self: start; grid-template-rows: none; }
 .product-thumbnails--single .product-thumbnail { aspect-ratio: 4 / 5; }
@@ -291,7 +291,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
   .production-page-hero h1 { font-size: clamp(3rem, 5.7vw, 3.65rem); }
   .contact-grid { gap: 60px; }
   .product-gallery-viewer { grid-template-columns: minmax(0, 1fr) 72px; gap: 12px; }
-  .product-thumbnails--fits { width: 72px; }
+  .product-thumbnails.product-thumbnails--fits { width: 72px; }
   .product-thumbnails { gap: 8px; }
   .products-gallery-cta { gap: 34px; }
 }
@@ -382,7 +382,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 500; }
   .product-production-info .text-link { flex: none; }
   .product-gallery-viewer { grid-template-columns: 1fr; gap: 10px; }
   .product-thumbnails { grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: none; gap: 10px; }
-  .product-thumbnails--fits { position: static; width: auto; height: auto; min-height: 0; grid-template-rows: repeat(2, auto); }
+  .product-thumbnails.product-thumbnails--fits { position: static; width: auto; height: auto; min-height: 0; grid-template-rows: repeat(2, auto); }
   .product-thumbnail { aspect-ratio: 4 / 5; }
   .products-gallery-cta-section { padding-bottom: 72px; }
   .products-gallery-cta { align-items: flex-start; flex-direction: column; padding: 38px 32px; }

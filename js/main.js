@@ -85,11 +85,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const form = document.querySelector('#contact-form');
   const requestedProduct = new URLSearchParams(window.location.search).get('urun');
+  const productAliases = {
+    oversize: 'sifir-yaka',
+    esofman: 'esofman-alti',
+    'fermuarli-sweat': 'fermuarli-sweatshirt',
+    'is-elbiseleri': 'personel-kiyafetleri'
+  };
+  const resolvedProduct = Object.hasOwn(productAliases, requestedProduct)
+    ? productAliases[requestedProduct]
+    : requestedProduct;
   const productSelect = form?.elements.namedItem('product');
 
   if (requestedProduct && productSelect instanceof HTMLSelectElement) {
-    const requestedOption = Array.from(productSelect.options).find(option => option.value === requestedProduct);
-    if (requestedOption) productSelect.value = requestedProduct;
+    const requestedOption = Array.from(productSelect.options).find(option => option.value === resolvedProduct);
+    if (requestedOption) productSelect.value = requestedOption.value;
   }
 
   form?.addEventListener('submit', event => {
@@ -115,6 +124,9 @@ document.addEventListener('DOMContentLoaded', () => {
     lines.push(`Telefon: ${value('phone')}`);
     if (value('email')) lines.push(`E-posta: ${value('email')}`);
     lines.push(`Ürün Grubu: ${productLabel}`);
+    if (requestedProduct === 'oversize' && value('product') === 'sifir-yaka') {
+      lines.push('Kalıp talebi: Oversize');
+    }
     if (value('quantity')) lines.push(`Tahmini Adet: ${value('quantity')}`);
     lines.push('', 'Mesaj:', value('message'));
 
