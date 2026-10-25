@@ -1,0 +1,7 @@
+# Project copy; host-wide rules must also live at https://kerem3409.github.io/robots.txt
+User-agent: *
+Allow: /
+Disallow: /argent-tekstil-web/reports/
+Disallow: /argent-tekstil-web/scripts/
+
+Sitemap: https://kerem3409.github.io/argent-tekstil-web/sitemap.xml

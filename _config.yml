@@ -1,0 +1,4 @@
+# Keep development/audit files in Git, but out of the GitHub Pages publication.
+exclude:
+  - reports
+  - scripts
