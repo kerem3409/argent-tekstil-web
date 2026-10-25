@@ -20,7 +20,7 @@ html.menu-open, body.menu-open { overflow: hidden; overscroll-behavior: none; }
 main, section, article, div, nav, form { min-width: 0; }
 a { color: inherit; text-decoration: none; }
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
-img { display: block; width: 100%; }
+img { display: block; width: 100%; height: auto; }
 button, input, textarea, select { font: inherit; }
 .container { width: min(calc(100% - 48px), var(--container)); margin-inline: auto; }
 .section { padding: 110px 0; }
